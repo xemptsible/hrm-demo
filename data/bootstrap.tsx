@@ -1,6 +1,8 @@
+"use server";
+
 import { fakerVI as faker } from "@faker-js/faker";
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-import { writeFileSync } from "fs";
+import { writeFile } from "node:fs/promises";
 
 faker.setDefaultRefDate(new Date("2024-07-01"));
 
@@ -145,7 +147,7 @@ export const mock_data: IHRM_Records = {
 // Step 1: Open terminal.
 // Step 2: Type 'npx tsx data/bootstrap.tsx'.
 // Step 3: Type 'json-server data/db.json'.
-writeFileSync("data/fakerjs_data.json", JSON.stringify(mock_data));
+writeFile("data/fakerjs_data.json", JSON.stringify(mock_data));
 
 // Comment the line above and un-comment the line below the terminal command.
 
