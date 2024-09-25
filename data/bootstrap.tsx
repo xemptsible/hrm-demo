@@ -4,16 +4,13 @@ import { fakerVI as faker } from "@faker-js/faker";
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { writeFile } from "node:fs/promises";
 
-faker.setDefaultRefDate(new Date("2024-07-01"));
+import { IDepartment } from "./interfaces/department";
+import { LeaveRequestStatus, ILeaveRequest } from "./interfaces/leave_request";
+import { IHRM_Records } from "./interfaces/main_mock_object";
+import { IPayroll } from "./interfaces/payroll";
+import { IUser } from "./interfaces/user";
 
-import {
-  LeaveRequestStatus,
-  IDepartment,
-  IHRM_Records,
-  ILeaveRequest,
-  IPayroll,
-  IUser,
-} from "./interfaces";
+faker.setDefaultRefDate(new Date("2024-07-01"));
 
 let user_seq_id = 1;
 let department_seq_id = 1;
