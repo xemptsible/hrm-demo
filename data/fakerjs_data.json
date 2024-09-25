@@ -1,0 +1,470 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "department_id": 1,
+            "last_name": "Trần",
+            "first_name": "Bách Nhân",
+            "birth_date": "2002-02-23T13:43:31.916Z",
+            "sex": "female",
+            "email": "BachNhan.Tran21@quocbao.vn",
+            "password": "picaboku",
+            "position": "Product Security Engineer",
+            "isAdmin": false
+        },
+        {
+            "id": 2,
+            "department_id": 5,
+            "last_name": "Trương",
+            "first_name": "Bảo Bảo",
+            "birth_date": "2002-03-13T16:29:11.164Z",
+            "sex": "male",
+            "email": "BaoBao_Truong@quocbao.vn",
+            "password": "jivaneza",
+            "position": "Principal Group Director",
+            "isAdmin": false
+        },
+        {
+            "id": 3,
+            "department_id": 1,
+            "last_name": "Đỗ",
+            "first_name": "Uyển Nhi",
+            "birth_date": "2004-06-19T19:11:29.502Z",
+            "sex": "female",
+            "email": "UyenNhi.7ko49@quocbao.vn",
+            "password": "deretiza",
+            "position": "Central Operations Liaison",
+            "isAdmin": false
+        },
+        {
+            "id": 4,
+            "department_id": 2,
+            "last_name": "Tăng",
+            "first_name": "Toàn Thắng",
+            "birth_date": "2003-12-25T17:43:51.862Z",
+            "sex": "female",
+            "email": "ToanThang.Tang72@quocbao.vn",
+            "password": "podovifu",
+            "position": "Investor Implementation Strategist",
+            "isAdmin": false
+        },
+        {
+            "id": 5,
+            "department_id": 2,
+            "last_name": "Đỗ",
+            "first_name": "Bằng Sơn",
+            "birth_date": "2006-01-29T22:20:23.572Z",
+            "sex": "female",
+            "email": "BangSon.7ko3@quocbao.vn",
+            "password": "wulobecu",
+            "position": "Corporate Web Director",
+            "isAdmin": false
+        },
+        {
+            "id": 6,
+            "department_id": 1,
+            "last_name": "Đào",
+            "first_name": "Triều Thanh",
+            "birth_date": "2005-08-12T05:00:38.712Z",
+            "sex": "female",
+            "email": "TrieuThanh_7kao@quocbao.vn",
+            "password": "dawopuli",
+            "position": "Principal Interactions Associate",
+            "isAdmin": false
+        },
+        {
+            "id": 7,
+            "department_id": 2,
+            "last_name": "Nguyễn",
+            "first_name": "Quang Đạt",
+            "birth_date": "2001-10-23T01:02:37.086Z",
+            "sex": "male",
+            "email": "Quang7kat.Nguyen11@quocbao.vn",
+            "password": "qifaquna",
+            "position": "Senior Markets Liaison",
+            "isAdmin": false
+        },
+        {
+            "id": 8,
+            "department_id": 5,
+            "last_name": "Lê",
+            "first_name": "Xuân Thủy",
+            "birth_date": "2002-03-23T20:29:23.801Z",
+            "sex": "female",
+            "email": "XuanThuy_Le67@quocbao.vn",
+            "password": "qeyikoga",
+            "position": "Investor Solutions Officer",
+            "isAdmin": false
+        },
+        {
+            "id": 9,
+            "department_id": 1,
+            "last_name": "Vũ",
+            "first_name": "Thanh Mẫn",
+            "birth_date": "2005-06-14T02:43:09.302Z",
+            "sex": "male",
+            "email": "ThanhMan.Vu@quocbao.vn",
+            "password": "pibubiyo",
+            "position": "Human Functionality Representative",
+            "isAdmin": false
+        },
+        {
+            "id": 10,
+            "department_id": 4,
+            "last_name": "Phạm",
+            "first_name": "Cát Ly",
+            "birth_date": "2001-12-13T07:15:51.131Z",
+            "sex": "male",
+            "email": "CatLy.Pham@quocbao.vn",
+            "password": "hovabepa",
+            "position": "Principal Mobility Executive",
+            "isAdmin": true
+        },
+        {
+            "id": 11,
+            "department_id": 3,
+            "last_name": "Đặng",
+            "first_name": "Quốc Mỹ",
+            "birth_date": "2004-04-10T12:51:28.916Z",
+            "sex": "female",
+            "email": "QuocMy.7kang@quocbao.vn",
+            "password": "wipovime",
+            "position": "Dynamic Research Director",
+            "isAdmin": false
+        },
+        {
+            "id": 12,
+            "department_id": 3,
+            "last_name": "Phùng",
+            "first_name": "Kiết Trinh",
+            "birth_date": "2005-09-05T23:55:37.415Z",
+            "sex": "female",
+            "email": "KietTrinh_Phung@quocbao.vn",
+            "password": "zekutiqi",
+            "position": "Central Directives Orchestrator",
+            "isAdmin": false
+        },
+        {
+            "id": 13,
+            "department_id": 2,
+            "last_name": "Phùng",
+            "first_name": "Thư Lâm",
+            "birth_date": "2002-08-16T19:50:22.056Z",
+            "sex": "female",
+            "email": "ThuLam_Phung@quocbao.vn",
+            "password": "nuqirope",
+            "position": "Customer Group Director",
+            "isAdmin": false
+        },
+        {
+            "id": 14,
+            "department_id": 3,
+            "last_name": "Đỗ",
+            "first_name": "Lan Nhi",
+            "birth_date": "2003-06-17T07:23:48.826Z",
+            "sex": "female",
+            "email": "LanNhi_7ko@quocbao.vn",
+            "password": "humukilu",
+            "position": "Internal Operations Director",
+            "isAdmin": false
+        },
+        {
+            "id": 15,
+            "department_id": 4,
+            "last_name": "Dương",
+            "first_name": "Xuân Lan",
+            "birth_date": "2006-02-01T18:09:46.922Z",
+            "sex": "female",
+            "email": "XuanLan.Duong@quocbao.vn",
+            "password": "deyigare",
+            "position": "Dynamic Accountability Analyst",
+            "isAdmin": true
+        }
+    ],
+    "departments": [
+        {
+            "id": 1,
+            "name": "Front-end"
+        },
+        {
+            "id": 2,
+            "name": "Back-end"
+        },
+        {
+            "id": 3,
+            "name": "Manager"
+        },
+        {
+            "id": 4,
+            "name": "R&D"
+        },
+        {
+            "id": 5,
+            "name": "Customer Support"
+        }
+    ],
+    "leave_requests": [
+        {
+            "id": 1,
+            "user_id": 1,
+            "submitted_at": "2024-06-27T05:15:04.215Z",
+            "start_at": "2024-07-03T06:58:53.494Z",
+            "end_at": "2024-07-06T22:47:31.189Z",
+            "status": "Pending"
+        },
+        {
+            "id": 2,
+            "user_id": 14,
+            "submitted_at": "2024-06-05T16:05:44.276Z",
+            "start_at": "2024-07-06T17:59:05.473Z",
+            "end_at": "2024-07-09T17:32:03.302Z",
+            "status": "Rejected"
+        },
+        {
+            "id": 3,
+            "user_id": 8,
+            "submitted_at": "2024-06-26T22:50:34.856Z",
+            "start_at": "2024-07-01T07:20:31.279Z",
+            "end_at": "2024-07-03T21:53:00.140Z",
+            "status": "Pending"
+        },
+        {
+            "id": 4,
+            "user_id": 15,
+            "submitted_at": "2024-06-17T03:14:26.289Z",
+            "start_at": "2024-07-06T15:51:30.366Z",
+            "end_at": "2024-07-09T13:22:18.548Z",
+            "status": "Pending"
+        },
+        {
+            "id": 5,
+            "user_id": 10,
+            "submitted_at": "2024-06-28T18:17:52.920Z",
+            "start_at": "2024-07-05T16:22:18.849Z",
+            "end_at": "2024-07-11T04:17:25.478Z",
+            "status": "Approved"
+        },
+        {
+            "id": 6,
+            "user_id": 14,
+            "submitted_at": "2024-06-09T11:30:53.879Z",
+            "start_at": "2024-07-04T18:25:44.490Z",
+            "end_at": "2024-07-09T22:56:19.056Z",
+            "status": "Approved"
+        },
+        {
+            "id": 7,
+            "user_id": 1,
+            "submitted_at": "2024-06-15T07:40:41.829Z",
+            "start_at": "2024-07-01T07:09:44.078Z",
+            "end_at": "2024-07-07T00:07:51.795Z",
+            "status": "Approved"
+        },
+        {
+            "id": 8,
+            "user_id": 12,
+            "submitted_at": "2024-06-06T08:44:55.466Z",
+            "start_at": "2024-07-01T18:41:15.257Z",
+            "end_at": "2024-07-04T07:09:34.405Z",
+            "status": "Approved"
+        },
+        {
+            "id": 9,
+            "user_id": 10,
+            "submitted_at": "2024-06-08T21:43:01.464Z",
+            "start_at": "2024-07-05T01:18:54.410Z",
+            "end_at": "2024-07-06T12:36:39.764Z",
+            "status": "Rejected"
+        },
+        {
+            "id": 10,
+            "user_id": 10,
+            "submitted_at": "2024-06-08T06:09:48.026Z",
+            "start_at": "2024-07-02T17:03:48.460Z",
+            "end_at": "2024-07-03T00:38:05.685Z",
+            "status": "Approved"
+        }
+    ],
+    "payrolls": [
+        {
+            "id": 1,
+            "user_id": 11,
+            "base_salary": 14000000,
+            "tax": 5,
+            "total_hour": 190,
+            "overtime_hour": 30,
+            "deductible": 974085,
+            "gross_salary": 3080000000,
+            "net_salary": 2925025915,
+            "paid_at": "2024-06-21T16:02:01.429Z"
+        },
+        {
+            "id": 2,
+            "user_id": 9,
+            "base_salary": 10000000,
+            "tax": 10,
+            "total_hour": 175,
+            "overtime_hour": 15,
+            "deductible": 508478,
+            "gross_salary": 1900000000,
+            "net_salary": 1709491522,
+            "paid_at": "2024-06-27T01:34:00.958Z"
+        },
+        {
+            "id": 3,
+            "user_id": 10,
+            "base_salary": 15000000,
+            "tax": 10,
+            "total_hour": 164,
+            "overtime_hour": 4,
+            "deductible": 524053,
+            "gross_salary": 2520000000,
+            "net_salary": 2267475947,
+            "paid_at": "2024-06-15T12:03:54.625Z"
+        },
+        {
+            "id": 4,
+            "user_id": 11,
+            "base_salary": 6000000,
+            "tax": 15,
+            "total_hour": 175,
+            "overtime_hour": 15,
+            "deductible": 727192,
+            "gross_salary": 1140000000,
+            "net_salary": 968272808,
+            "paid_at": "2024-06-15T19:00:53.859Z"
+        },
+        {
+            "id": 5,
+            "user_id": 15,
+            "base_salary": 11000000,
+            "tax": 10,
+            "total_hour": 161,
+            "overtime_hour": 1,
+            "deductible": 959860,
+            "gross_salary": 1782000000,
+            "net_salary": 1602840140,
+            "paid_at": "2024-06-13T09:16:35.240Z"
+        },
+        {
+            "id": 6,
+            "user_id": 2,
+            "base_salary": 6000000,
+            "tax": 10,
+            "total_hour": 197,
+            "overtime_hour": 37,
+            "deductible": 932506,
+            "gross_salary": 1404000000,
+            "net_salary": 1262667494,
+            "paid_at": "2024-06-22T05:51:24.089Z"
+        },
+        {
+            "id": 7,
+            "user_id": 1,
+            "base_salary": 7000000,
+            "tax": 5,
+            "total_hour": 178,
+            "overtime_hour": 18,
+            "deductible": 858932,
+            "gross_salary": 1372000000,
+            "net_salary": 1302541068,
+            "paid_at": "2024-06-08T22:48:56.694Z"
+        },
+        {
+            "id": 8,
+            "user_id": 9,
+            "base_salary": 15000000,
+            "tax": 10,
+            "total_hour": 170,
+            "overtime_hour": 10,
+            "deductible": 682639,
+            "gross_salary": 2700000000,
+            "net_salary": 2429317361,
+            "paid_at": "2024-06-08T01:48:10.071Z"
+        },
+        {
+            "id": 9,
+            "user_id": 9,
+            "base_salary": 8000000,
+            "tax": 10,
+            "total_hour": 177,
+            "overtime_hour": 17,
+            "deductible": 688240,
+            "gross_salary": 1552000000,
+            "net_salary": 1396111760,
+            "paid_at": "2024-06-03T06:47:37.705Z"
+        },
+        {
+            "id": 10,
+            "user_id": 8,
+            "base_salary": 10000000,
+            "tax": 5,
+            "total_hour": 192,
+            "overtime_hour": 32,
+            "deductible": 873271,
+            "gross_salary": 2240000000,
+            "net_salary": 2127126729,
+            "paid_at": "2024-06-12T02:17:07.836Z"
+        },
+        {
+            "id": 11,
+            "user_id": 12,
+            "base_salary": 14000000,
+            "tax": 5,
+            "total_hour": 200,
+            "overtime_hour": 40,
+            "deductible": 694028,
+            "gross_salary": 3360000000,
+            "net_salary": 3191305972,
+            "paid_at": "2024-06-16T19:02:16.706Z"
+        },
+        {
+            "id": 12,
+            "user_id": 1,
+            "base_salary": 9000000,
+            "tax": 15,
+            "total_hour": 175,
+            "overtime_hour": 15,
+            "deductible": 879670,
+            "gross_salary": 1710000000,
+            "net_salary": 1452620330,
+            "paid_at": "2024-06-30T14:55:44.236Z"
+        },
+        {
+            "id": 13,
+            "user_id": 4,
+            "base_salary": 6000000,
+            "tax": 5,
+            "total_hour": 165,
+            "overtime_hour": 5,
+            "deductible": 891182,
+            "gross_salary": 1020000000,
+            "net_salary": 968108818,
+            "paid_at": "2024-06-09T19:28:45.962Z"
+        },
+        {
+            "id": 14,
+            "user_id": 3,
+            "base_salary": 7000000,
+            "tax": 10,
+            "total_hour": 182,
+            "overtime_hour": 22,
+            "deductible": 817645,
+            "gross_salary": 1428000000,
+            "net_salary": 1284382355,
+            "paid_at": "2024-06-16T23:25:17.570Z"
+        },
+        {
+            "id": 15,
+            "user_id": 12,
+            "base_salary": 13000000,
+            "tax": 5,
+            "total_hour": 184,
+            "overtime_hour": 24,
+            "deductible": 660510,
+            "gross_salary": 2704000000,
+            "net_salary": 2568139490,
+            "paid_at": "2024-06-16T04:21:51.232Z"
+        }
+    ]
+}
