@@ -1,12 +1,13 @@
 "use server";
 
-import { fakerVI as faker } from "@faker-js/faker";
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { writeFile } from "node:fs/promises";
 
+import { fakerVI as faker } from "@faker-js/faker";
+
 import { IDepartment } from "./interfaces/department";
 import { LeaveRequestStatus, ILeaveRequest } from "./interfaces/leave_request";
-import { IHRM_Records } from "./interfaces/main_mock_object";
+import { IHRM_Records } from "./interfaces/.main_mock_object";
 import { IPayroll } from "./interfaces/payroll";
 import { IUser } from "./interfaces/user";
 
@@ -45,7 +46,7 @@ export const mock_data: IHRM_Records = {
   const isAdmin = faker.datatype.boolean(0.25);
 
   const users: IUser = {
-    id,
+    id: id.toString(),
     department_id,
     last_name,
     first_name,
@@ -84,7 +85,7 @@ export const mock_data: IHRM_Records = {
   const status = random_status_generator();
 
   const leave_requests: ILeaveRequest = {
-    id,
+    id: id.toString(),
     user_id,
     submitted_at,
     start_at,
@@ -101,7 +102,7 @@ export const mock_data: IHRM_Records = {
   const name = faker.commerce.department();
 
   const departments: IDepartment = {
-    id,
+    id: id.toString(),
     name,
   };
 
@@ -126,7 +127,7 @@ export const mock_data: IHRM_Records = {
   const paid_at = faker.date.recent({ days: 30 });
 
   const payrolls: IPayroll = {
-    id,
+    id: id.toString(),
     user_id,
     base_salary,
     tax,
@@ -143,8 +144,8 @@ export const mock_data: IHRM_Records = {
 
 // Step 1: Open terminal.
 // Step 2: Type 'npx tsx data/bootstrap.tsx'.
-// Step 3: Type 'json-server data/db.json'.
-writeFile("data/fakerjs_data.json", JSON.stringify(mock_data));
+// Step 3: Type 'npx json-server data/db.json -p 5000'.
+writeFile("data/db.json", JSON.stringify(mock_data));
 
 // Comment the line above and un-comment the line below the terminal command.
 

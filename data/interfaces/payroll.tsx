@@ -1,5 +1,5 @@
 export interface IPayroll {
-  id: number;
+  id: string;
   user_id: number;
   base_salary: number;
   tax: number;
