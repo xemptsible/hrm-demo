@@ -6,6 +6,6 @@ import { IUser } from "./user";
 export interface IHRM_Records {
   users: IUser[];
   departments: IDepartment[];
-  leave_requests: ILeaveRequest[];
+  leaveRequests: ILeaveRequest[];
   payrolls: IPayroll[];
 }

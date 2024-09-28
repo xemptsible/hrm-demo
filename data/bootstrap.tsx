@@ -24,7 +24,7 @@ const department_count = 5;
 export const mock_data: IHRM_Records = {
   users: [],
   departments: [],
-  leave_requests: [],
+  leaveRequests: [],
   payrolls: [],
 };
 
@@ -86,14 +86,14 @@ export const mock_data: IHRM_Records = {
 
   const leave_requests: ILeaveRequest = {
     id: id.toString(),
-    user_id,
-    submitted_at,
-    start_at,
-    end_at,
+    userId: user_id,
+    submittedAt: submitted_at,
+    startAt: start_at,
+    endAt: end_at,
     status,
   };
 
-  mock_data.leave_requests.push(leave_requests);
+  mock_data.leaveRequests.push(leave_requests);
 });
 
 // Departments
@@ -128,15 +128,15 @@ export const mock_data: IHRM_Records = {
 
   const payrolls: IPayroll = {
     id: id.toString(),
-    user_id,
-    base_salary,
+    userId: user_id,
+    baseSalary: base_salary,
     tax,
-    total_hour,
-    overtime_hour,
+    totalHour: total_hour,
+    overtimeHour: overtime_hour,
     deductible,
-    gross_salary,
-    net_salary,
-    paid_at,
+    grossSalary: gross_salary,
+    netSalary: net_salary,
+    paidAt: paid_at,
   };
 
   mock_data.payrolls.push(payrolls);

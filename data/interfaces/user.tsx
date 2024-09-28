@@ -11,7 +11,7 @@ export interface IUser {
   isAdmin: boolean;
 }
 
-export interface IUpdateUser {
+export interface IUpdatedUser {
   department_id: number;
   last_name: string;
   first_name: string;

@@ -1,12 +1,12 @@
 export interface IPayroll {
   id: string;
-  user_id: number;
-  base_salary: number;
+  userId: number;
+  baseSalary: number;
   tax: number;
-  total_hour: number;
-  overtime_hour: number;
+  totalHour: number;
+  overtimeHour: number;
   deductible: number;
-  gross_salary: number;
-  net_salary: number;
-  paid_at: Date;
+  grossSalary: number;
+  netSalary: number;
+  paidAt: Date;
 }

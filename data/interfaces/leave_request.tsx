@@ -6,9 +6,9 @@ export enum LeaveRequestStatus {
 
 export interface ILeaveRequest {
   id: string;
-  user_id: number;
-  submitted_at: Date;
-  start_at: Date;
-  end_at: Date;
+  userId: number;
+  submittedAt: Date;
+  startAt: Date;
+  endAt: Date;
   status: LeaveRequestStatus;
 }
