@@ -9,10 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "class-variance-authority": "^0.7.0",
+    "lucide-react": "^0.446.0",
     "next": "14.2.13",
     "react": "^18",
     "react-dom": "^18",
-    "swr": "^2.2.6-beta.4"
+    "swr": "^2.2.6-beta.4",
+    "tailwind-merge": "^2.5.2"
   },
   "devDependencies": {
     "@faker-js/faker": "^9.0.2",

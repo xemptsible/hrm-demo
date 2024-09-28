@@ -3,14 +3,14 @@
 @tailwind utilities;
 
 :root {
-  --background: #fbfbfe;
+  --background: #f0f0f0;
   --foreground: #040316;
   --primary: #005499;
   --secondary: #eb9800;
   --accent: #175369;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --foreground: #eae9fc;
     --background: #010104;
@@ -18,12 +18,18 @@
     --secondary: #ffad14;
     --accent: #96d2e8;
   }
-}
+} */
 
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer apply {
+  .lucide {
+    flex-shrink: 0;
+  }
 }
 
 @layer utilities {
