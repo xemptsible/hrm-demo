@@ -5,27 +5,19 @@ import { twMerge } from "tailwind-merge";
 
 import Link from "next/link";
 
-const sidebarVariants = cva(["rounded", "text-foreground"], {
+const sidebarVariants = cva(["text-foreground", "transition-colors"], {
   variants: {
-    variant: {
-      default: [
-        "disabled:bg-gray-500",
-        "hover:bg-primary",
-        "hover:text-background",
-      ],
-      selected: [
-        "bg-accent",
-        "hover:bg-primary",
-        "hover:text-background",
-        "text-background",
-      ],
+    type: {
+      default: ["disabled:bg-gray-500", "hover:bg-gray-300"],
+      selected: ["bg-primary", "text-background"],
     },
     size: {
-      default: ["flex", "p-2", "gap-2"],
+      default: ["flex", "px-4", "py-3", "gap-2"],
+      icon: ["flex", "p-5", "gap-2"],
     },
   },
   defaultVariants: {
-    variant: "default",
+    type: "default",
     size: "default",
   },
 });
@@ -39,7 +31,7 @@ interface SidebarProps extends InitialProps {
 }
 
 export function SidebarItem({
-  variant,
+  type,
   size,
   className,
   url = "",
@@ -51,7 +43,7 @@ export function SidebarItem({
     <li {...props}>
       <Link
         href={url}
-        className={twMerge(sidebarVariants({ variant, size, className }))}
+        className={twMerge(sidebarVariants({ type, size, className }))}
       >
         {icon}
         {urlName}
