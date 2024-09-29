@@ -2,24 +2,23 @@
 
 import { usePathname } from "next/navigation";
 import { SidebarItem } from "../cva/sidebar-cva";
-import {
-  SidebarProvider,
-  useSidebarContext,
-} from "@/app/context/sidebar-context";
+import { useSidebarContext } from "@/app/context/sidebar-context";
 import {
   LayoutDashboard,
   Users,
   TreePalm,
   CircleDollarSign,
-  FlaskRound,
 } from "lucide-react";
+import { useThemeContext } from "@/app/context/theme-context";
 
 export default function SidebarComponent() {
-  const { isSmall, isVisible } = useSidebarContext();
+  const { isDark } = useThemeContext();
 
   return (
     <aside
-      className={`bg-white ${isVisible ? "hidden" : "flex"} flex-col shadow-lg`}
+      className={`${
+        !isDark ? "bg-background" : "bg-slate-600"
+      } flex flex-col shadow-lg`}
     >
       <nav className="top-0 inset-0 sticky">
         <ul>
@@ -43,11 +42,6 @@ export default function SidebarComponent() {
             urlName={"Payroll"}
             icon={<CircleDollarSign />}
           />
-          <SidebarItemFull
-            url={"/experiment"}
-            urlName={"Experiment"}
-            icon={<FlaskRound />}
-          />
         </ul>
       </nav>
     </aside>
@@ -65,7 +59,7 @@ export function SidebarItemFull({
   className?: string;
   icon: JSX.Element;
 }) {
-  const { isSmall } = useSidebarContext();
+  const { isCollapsed } = useSidebarContext();
 
   const pathname = usePathname();
 
@@ -73,8 +67,8 @@ export function SidebarItemFull({
     <SidebarItem
       type={pathname === url ? "selected" : "default"}
       url={url}
-      urlName={isSmall ? urlName : ""}
-      className={isSmall ? `${className} w-[16rem]` : `${className}`}
+      urlName={!isCollapsed ? urlName : ""}
+      className={!isCollapsed ? `${className} w-[16rem]` : `${className}`}
       icon={icon}
     />
   );
