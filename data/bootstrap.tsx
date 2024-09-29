@@ -1,5 +1,9 @@
 "use server";
 
+// Step 1: Open a terminal of your preference.
+// Step 2: Type 'npx tsx data/bootstrap.tsx'.
+// Step 3: Type 'npx json-server data/db.json -p 5000'.
+
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { writeFile } from "node:fs/promises";
 
@@ -142,12 +146,12 @@ export const mock_data: IHRM_Records = {
   mock_data.payrolls.push(payrolls);
 });
 
-// Step 1: Open terminal.
+// Step 1: Open a terminal of your preference.
 // Step 2: Type 'npx tsx data/bootstrap.tsx'.
 // Step 3: Type 'npx json-server data/db.json -p 5000'.
-writeFile("data/db.json", JSON.stringify(mock_data));
 
-// Comment the line above and un-comment the line below the terminal command.
+// Remember to comment the writeFile line to avoid unnecessary writes!
+writeFile("data/db.json", JSON.stringify(mock_data));
 
 // npx tsx data/bootstrap.tsx for logging
 // console.log(JSON.stringify(create_leave_request));

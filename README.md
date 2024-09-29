@@ -1,8 +1,25 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+## How to run the project locally/Cách chạy dự án trên máy
 
-First, run the development server:
+First, go to the bootstrap.tsx located in the data folder (data/bootstrap.tsx) and run the following commands:
+
+```bash
+npx tsx data/bootstrap.tsx
+# then start the server
+npx json-server data/db.json -p 5000
+# Expected result:
+
+# Endpoints:
+# http://localhost:5000/users
+# http://localhost:5000/departments
+# http://localhost:5000/leaveRequests
+# http://localhost:5000/payrolls
+
+```
+
+
+Second, open another bash terminal and run the development server:
 
 ```bash
 npm run dev
