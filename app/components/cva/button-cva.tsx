@@ -4,7 +4,7 @@ import { twMerge } from "tailwind-merge";
 
 const buttonVariants = cva(["transition-colors"], {
   variants: {
-    type: {
+    style: {
       default: [
         "font-bold",
         "justify-center",
@@ -12,6 +12,14 @@ const buttonVariants = cva(["transition-colors"], {
         "disabled:bg-gray-500",
         "hover:bg-primary",
         "hover:text-background",
+        "dark:hover:text-foreground",
+      ],
+      highlight: ["disabled:bg-gray-500", "hover:text-accent"],
+      block: [
+        "disabled:bg-gray-500",
+        "hover:bg-gray-300",
+        "bg-primary",
+        "text-background",
       ],
     },
     size: {
@@ -19,7 +27,7 @@ const buttonVariants = cva(["transition-colors"], {
     },
   },
   defaultVariants: {
-    type: "default",
+    style: "default",
     size: "default",
   },
 });
@@ -27,11 +35,16 @@ const buttonVariants = cva(["transition-colors"], {
 type ButtonProps = VariantProps<typeof buttonVariants> &
   ComponentProps<"button">;
 
-export function Button({ type, size, className, ...props }: ButtonProps) {
+export function Button({
+  style: type,
+  size,
+  className,
+  ...props
+}: ButtonProps) {
   return (
     <button
       {...props}
-      className={twMerge(buttonVariants({ type, size, className }))}
+      className={twMerge(buttonVariants({ style: type, size, className }))}
     />
   );
 }

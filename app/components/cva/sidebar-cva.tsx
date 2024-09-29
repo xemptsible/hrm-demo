@@ -8,7 +8,7 @@ import Link from "next/link";
 const sidebarVariants = cva(["text-foreground", "transition-colors"], {
   variants: {
     type: {
-      default: ["disabled:bg-gray-500", "hover:bg-gray-300"],
+      default: ["disabled:bg-gray-500", "hover:text-primary"],
       selected: ["bg-primary", "text-background"],
     },
     size: {

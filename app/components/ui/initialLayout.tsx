@@ -29,7 +29,7 @@ export default function InitialLayout({ children }: { children: ReactNode }) {
       <HeaderComponent />
       <main className="grid grid-cols-[auto,1fr] flex-grow-1 overflow-auto h-dvh">
         <SidebarComponent />
-        <div className="p-2">{children}</div>
+        <div className="p-4">{children}</div>
       </main>
     </body>
   );

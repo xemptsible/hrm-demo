@@ -3,16 +3,13 @@ import {
   createContext,
   useCallback,
   useContext,
-  useEffect,
   useMemo,
   useState,
 } from "react";
 
 type SidebarContextType = {
-  isSmall: boolean;
-  isVisible: boolean;
+  isCollapsed: boolean;
   toggle: () => void;
-  close: () => void;
 };
 
 const SidebarContext = createContext<SidebarContextType | undefined>(undefined);
@@ -25,40 +22,15 @@ export function useSidebarContext() {
 }
 
 export function SidebarProvider({ children }: { children: ReactNode }) {
-  const [isSmall, setSidebarSize] = useState(true);
-  const [isVisible, toggleVisibility] = useState(false);
-
-  useEffect(() => {
-    const handler = () => {
-      if (!isScreenSmall()) {
-        setSidebarSize(true);
-      } else {
-        setSidebarSize(false);
-      }
-    };
-
-    window.addEventListener("resize", handler);
-
-    return () => {
-      window.removeEventListener("resize", handler);
-    };
-  }, []);
-
-  function isScreenSmall() {
-    return window.innerWidth <= 640;
-  }
+  const [isCollapsed, toggleSidebar] = useState(false);
 
   const toggle = useCallback(() => {
-    toggleVisibility((s) => !s);
-  }, [toggleVisibility]);
-
-  const close = useCallback(() => {
-    toggleVisibility(false);
-  }, [toggleVisibility]);
+    toggleSidebar((s) => !s);
+  }, [toggleSidebar]);
 
   const screensizeValue = useMemo(
-    () => ({ isSmall, isVisible, close, toggle }),
-    [isSmall, isVisible, close, toggle]
+    () => ({ isCollapsed, toggle }),
+    [isCollapsed, toggle]
   );
 
   return (
